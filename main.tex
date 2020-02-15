@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Felipe}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Neves}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Embedded Software Developer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	%\icon{MapMarker}{12}{Black Mesa East}\\
+	%\icon{Phone}{12}{+1 123 456 789}\\
+	%\icon{At}{12}{\href{mailto:alyx@vance.me}{alyx@vance.me}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	%\icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	%\icon{Github}{12}{\href{https://github.com/alyxvance}{github.com/alyxvance}}\\
+	%\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+	\icon{MapMarker}{12}{Curitiba/PR - Brazil}\\
+	\icon{Phone}{12}{+55 41 988950220}\\
+	\icon{At}{12}{\href{mailto:feupos@hotmail.com}{feupos@hotmail.com}}\\	
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	I am a C/C++ embedded software developer from Brazil, currently employed at a railway
+	technology company and finishing a Master's degree as well as having experience working
+	with research on Brain Computer Interfaces (BCI) in Japan, and looking for new challenges 
+	and opportunities to work and grow as a software developer working at a great company abroad.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{C}{100}
+		\baritem{C++}{90}
+		\baritem{Python}{80}
+		\baritem{Matlab}{60}
+		\baritem{UML}{50}
+		\baritem{LaTeX}{25}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{4/Linux, 5/Git, 4/Gerrit, 3/JIRA, 3/Office}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2018 -- Current}
+		{Embedded Software Developer}
+		{Alta Rail Technology}
+		{Development of software in C, C++ and Python for embedded systems using On-Time RTOS and
+		Linux for railway applications. Involved with development of core system applications such
+		as the safety navigation module (MISRA C compliant), and binary communication libraries as well 
+		as GUI for On-Time RTOS and performing code review using Gerrit and troubleshooting/debugging.
+		Also writing functional specification and risk analysis documents for products.}
+	\entry
+		{2017 -- 2018\\\footnotesize{part time}}
+		{Software Development Intern}
+		{Alta Rail Technology}
+		{Development of software in C, C++ and Python for embedded systems using On-Time RTOS and 
+		Linux for railway applications.}
+	\entry
+		{2016 -- 2017\\\footnotesize{part time}}
+		{Quality Assurance Intern}
+		{Alta Rail Technology}
+		{Inspect, test and measure materials and equipments to ensure that they meet production standards.}
+	\entry
+		{2012 -- 2013\\\footnotesize{part time}}
+		{Technical Assitance Intern}
+		{NHS Electronic Systems}
+		{Performed electronic hardware maintenance in UPS systems.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2019 -- Ongoing}
+		{Master's Degree}
+		{Universidade Tecnológica Federal do Paraná - Brazil}
+		{Currently enrolled in the Applied Computing graduate program, developing solutions
+		with the use of new Notification Oriented Paradigm}
+	\entry
+		{2012 -- 2018}
+		{Bachelor's Degree in Electronic Engineering}
+		{Universidade Tecnológica Federal do Paraná - Brazil}
+		{}
+	\entry
+		{2015 -- 2016}
+		{Science Without Borders Program}
+		{Shibaura Institute of Technology - Japan}
+		{Working for a year at a BCI research laboratory at the institute as well as a short-term
+		1 month internship in IHI Corporation Japan}
+	\entry
+		{2009 -- 2012}
+		{Technical Degree in Electronics}
+		{Universidade Tecnológica Federal do Paraná - Brazil}
+		{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Portuguese} - native\\
+	\textbf{English} - fluent\\
+	\textbf{Japanese} - basic
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.7\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies \& Others}
+
+	I am a huge cinema geek, going to the movies whenever I can, and I am also really into all
+	types of games, being it computer games, card games, board games. Besides that I also love 
+	exercising and recently I have taken a liking to running.
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
