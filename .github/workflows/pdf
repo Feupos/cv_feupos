@@ -1,0 +1,21 @@
+name: LaTeX Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install LaTeX
+      run: |
+        apt-get update
+        apt-get install -y texlive-full
+    - name: Build LaTeX files
+      run: |
+        pdflatex main.tex
+    - name: Upload PDF file
+      uses: actions/upload-artifact@v2
+      with:
+        name: main.pdf
