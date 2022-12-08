@@ -18,5 +18,5 @@ jobs:
     - name: Upload PDF file
       uses: actions/upload-artifact@v2
       with:
-        name: main.pdf
-        path: fneves_cv.pdf
+        path: main.pdf
+        name: fneves_cv.pdf
